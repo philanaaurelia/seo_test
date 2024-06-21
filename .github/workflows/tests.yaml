@@ -1,5 +1,7 @@
 name: Tests
 on: push
+  paths:
+      - 'calculator/**'
 
 jobs:
   unit-tests:
