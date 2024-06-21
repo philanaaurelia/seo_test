@@ -1,5 +1,5 @@
 class Calc:
-    """A simple calculator class"""
+    """A simple calculator classe"""
 
     def add(self, a, b):
         """Add two numbers together"""
