@@ -6,7 +6,7 @@ class Calc:
         return a + b
 
     def sub(self, a, b):
-        """Subtract two numbers"""
+        """Subtract two number"""
         return a - b
     
     def mul(self, a, b):
