@@ -1,1 +1,1 @@
-# seo_test_Jake
+# seo_test_<author>
