@@ -18,11 +18,13 @@ jobs:
              pip install coverage
 
       - name: Test with unittest
-        run: python3 -m unittest ./calculator/test_calc.py
+        working-directory: ./calculator
+        run: python3 -m unittest test_calc.py
 
-      - name: Check code coverage        
+      - name: Check code coverage
+        working-directory: ./calculator
         run: |
-          python3 -m coverage run -m unittest ./calculator/test_calc.py
+          python3 -m coverage run -m unittest test_calc.py
           python3 -m coverage report
           python3 -m coverage html
           
