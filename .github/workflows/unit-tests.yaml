@@ -5,10 +5,10 @@ jobs:
   unit-tests:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Setup python
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v4
         with:
           python-version: 3.11.3
 
@@ -29,8 +29,8 @@ jobs:
           python3 -m coverage html
           
       - name: Archive code coverage HTML report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
             name: code-coverage-report
-            path: htmlcov
+            path: ./calculator
 
